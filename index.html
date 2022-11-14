@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es|">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
    <script async src="./index.js"></script>
 </head>
 <body>
       <header class="header">
-         <div class="logo"></div>
-         <input type="button" value="Ingresar">
+         <img src="https://bulma.io/images/placeholders/48x48.png" alt="" class="logo">
+         <input type="button" value="Ingresar" class="button is-primary">
       </header>
-      <div class="contenedor">
-         <div class="contenedor__description">
+      <div class="container">
+         <div class="container__description">
             <h4 class="description-titulo">Escribenos</h4>
             <p class="description-parrafo">Dejanos tu mensaje y te responderemos pronto.</p>
          </div>
-         <form action="" class="form">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" ></input>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" ></textarea>
+         <form action="" class="box">
+            <label for="name" class="label">Nombre</label>
+            <input type="text" id="name" class="input"></input>
+            <label for="mensaje" class="label">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"  class="textarea is-medium"></textarea>
+            <div class="botones">
+               <button class="button is-info ">Enviar</button>
+               <button class="button is-info is-light is-inverte">Cancelar</button>
+            </div>
          </form>
       </div>
 </body>
