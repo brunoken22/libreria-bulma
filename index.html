@@ -6,28 +6,37 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-   <script async src="./index.js"></script>
 </head>
 <body>
-      <header class="header">
-         <img src="https://bulma.io/images/placeholders/48x48.png" alt="" class="logo">
-         <input type="button" value="Ingresar" class="button is-primary">
-      </header>
-      <div class="container">
-         <div class="container__description">
-            <h4 class="description-titulo">Escribenos</h4>
-            <p class="description-parrafo">Dejanos tu mensaje y te responderemos pronto.</p>
+   <div class="container is-widescreen">
+      <header class="columns is-mobile m-2 is-align-items-center">
+         <div class="column">
+            <figure class="image is-48x48">
+               <img src="https://bulma.io/images/placeholders/48x48.png" alt="" class="is-rounded">
+            </figure>
          </div>
-         <form action="" class="box">
+         <div class="column"></div>
+         <div class="column">
+            <input type="button" value="Ingresar" class="button is-primary is-three-quarters-mobile is-fullwidth">
+         </div>
+      </header>
+
+      <div class="container m-4 ">
+         <div class="is-large mt-5">
+            <h4 class="title is-2">Escribenos</h4>
+            <p class="subtitle ">Dejanos tu mensaje y te responderemos pronto.</p>
+         </div>
+         <form action="" class="mt-6">
             <label for="name" class="label">Nombre</label>
             <input type="text" id="name" class="input"></input>
             <label for="mensaje" class="label">Mensaje</label>
             <textarea name="mensaje" id="mensaje"  class="textarea is-medium"></textarea>
-            <div class="botones">
-               <button class="button is-info ">Enviar</button>
+            <div class="botones mt-3 ">
+               <button class="button is-info mr-2">Enviar</button>
                <button class="button is-info is-light is-inverte">Cancelar</button>
             </div>
          </form>
       </div>
+   </div>
 </body>
 </html>
